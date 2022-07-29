@@ -5,4 +5,5 @@
 {% for snack in snacks %}
 <h2><a href="{% url 'snack_detail' snack.pk %}">{{snack.pk}} - {{ snack.name }}</a></h2>
 {% endfor %}
+<button> <a href="{% url 'snack_create'%}">Create a new Snack</a></button>
 {% endblock content %}

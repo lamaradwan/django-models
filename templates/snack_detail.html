@@ -4,5 +4,10 @@
 <h1> Name: {{ snack.name }}</h1>
 <h2> Purchaser: {{ snack.purchaser }}</h2>
 <h3> Description: {{ snack.description }}</h3>
-
+<button>
+    <a href="{% url 'snack_update' snack.pk%}"> Update</a>
+</button>
+<button>
+    <a href="{% url 'snack_delete' snack.pk%}">Delete</a>
+</button>
 {% endblock content %}
