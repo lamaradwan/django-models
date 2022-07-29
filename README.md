@@ -25,6 +25,8 @@ python manage.py test
 No
 - Describe any tests that you did not complete, skipped, etc
 
-I've covered only the following:
+I've covered the following cases:
 1. verify status code
-2. verify correct template use
+2. verify correct template used
+3. Verify create view
+4. Verify detail view
