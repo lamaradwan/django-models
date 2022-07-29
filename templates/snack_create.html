@@ -1,0 +1,10 @@
+{% extends 'base.html'%}
+{% block title %} snack create {% endblock title %}
+{% block content%}
+<h1>Adding new snack</h1>
+<form method="post">
+    {{ form.as_p }}
+        {% csrf_token %}
+    <button type="submit">Submit</button>
+</form>
+{% endblock content %}
